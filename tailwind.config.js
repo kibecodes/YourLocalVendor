@@ -9,7 +9,14 @@ export default {
       },
       backgroundImage: {
         'call-image': "url('./assets/call.jpg')",
-        'happy-image': "url('./assets/happy.jpg')"
+        'happy-image': "url('./assets/happy.jpg')",
+        'basket-image': "url('./assets/basket.jpg')",
+        'pay-image': "url('./assets/pay.jpg')",
+        'phone-image': "url('./assets/phone.jpg')"
+      },
+      colors: {
+        'sepia': '#E3B778',
+        'fawn': '#C8A951'
       }
     },
   },

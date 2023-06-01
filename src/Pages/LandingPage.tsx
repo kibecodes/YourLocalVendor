@@ -67,8 +67,8 @@ const LandingPage = () => {
                 </Navbar>
 
                 <Content id='div'>
-                    <main className='overflow-auto @container'>
-                        //**Header section */
+                    <main className='overflow-auto'>
+                        //**Navbar */
                         <section id='hero' className='flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-12 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height'>
                                 <article className='sm:w-1/2'>
                                     <h2 className='max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900 dark:text-white'>Shop Local Support Community</h2>
@@ -76,7 +76,7 @@ const LandingPage = () => {
                                         <p className='max-w-md text-2xl mt-4 text-center sm:text-3xl sm:text-left text-slate-700 dark:text-slate-400'>Growing together.</p>
                                 </article>
                                 <div id='call' className='bg-call-image rounded-md bg-cover bg-center h-64 flex flex-col items-center justify-evenly pt-4 w-1/3 child place-self-stretch'>
-                                    <button type='button' className='pt-4 px-6 rounded-lg bg-sky-700 hover:bg-sky-500 text-white text-center p-4'>
+                                    <button type='button' className='pt-4 px-6 rounded-lg text-white text-center p-4 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300'>
                                         Vendor Login
                                     </button>
                                     <button type='button' className='pt-4 px-6 rounded-lg bg-purple-700 hover:bg-purple-500 text-white text-center p-4'>
@@ -87,20 +87,65 @@ const LandingPage = () => {
                                 </div>
                         </section>
 
-                        //**Feature section image issue */
-                        <section id='hero' className='flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-12 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height'>
-                            <div id='bg-happy-image bg-cover bg-center h-64 flex flex-col items-center justify-evenly pt-4 w-1/3 child place-self-stretch'>
-                                Slides
-
-                            </div>
+                        //**Features*/
+                        <section id='features' className='flex flex-col justify-center sm:flex-row p-6 items-center gap-8 mb-12 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height'>
+                            <main id='slideshow' className='flex-nowrap w-full p-1 overflow-x-scroll overflow-y-hidden md:overflow-y-scroll scrollbar-none grid grid-flow-col justify-start gap-8 py-4 px-4'>
+                                <div className='bg-pay-image bg-cover w-40 h-56 flex flex-col text-center pt-2 bg-green-500 rounded-md p-2'>
+                                    Payment
+                                </div>
+                                <div className='bg-phone-image bg-cover w-40 h-56 flex flex-col text-center pt-2 bg-yellow-400 rounded-md p-2'>
+                                    Call/ Message
+                                </div>
+                                <div className='bg-basket-image bg-cover w-40 h-56 flex flex-col text-center pt-2 bg-sky-400 rounded-md p-2'>
+                                    Available goods
+                                </div>
+                                <div className='w-40 h-56 flex flex-col text-center pt-2 bg-green-400 rounded-md p-2'>
+                                    Notifications
+                                </div>
+                                <div className='w-40 h-56 flex flex-col text-center pt-2 bg-amber-400 rounded-md p-2'>
+                                    Add Testimony
+                                </div>
+                                <div className='w-40 h-56 flex flex-col text-center pt-2 bg-amber-400 rounded-md p-2'>
+                                    Tip
+                                </div>
+                                <div className='w-40 h-56 flex flex-col text-center pt-2 bg-indigo-400 rounded-md p-2'>
+                                    Rate/ Review
+                                </div>
+                                <div className='w-40 h-56 flex flex-col text-center pt-2 bg-purple-400 rounded-md p-2'>
+                                    Feedback
+                                </div>
+                            </main>
                         </section>
                         
-
-                        {/* <section id='features' className='flex flex-col-reverse justify-center sm:flex-row p-6 items-center scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height bg-red-400'>
-                                <div id='feature' className=''>Slideshow</div>
-                                <div id='testimonials'></div>
-                                <div id='feature-2'></div>
-                        </section> */}
+                        //**Testimonials  */
+                        <section id='test' className='widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6 bg-red-400'>
+                                <figure id='v-scroll' className='flex flex-col overflow-y-auto  w-screen bg-mint-500'>
+                                    <article id='testimonial' className='flex flex-row w-1/2 p-4 gap-8 bg-sepia italic' >
+                                        //**quotes and italics */
+                                        <h3>Awesome app! Highly recommended for all the Mama Mbogas out there.</h3>
+                                        //**Review stars */
+                                        //**reviewer name */
+                                    </article>
+                                </figure>
+                                <div>
+                                    <article id='testimonial' className='flex flex-row w-1/2 p-4 gap-8 bg-sepia italic' >
+                                        <h3>Its amazing no one thought of this earlier. I now don't have to worry about looking for other places to get my veggies.</h3>
+                                    </article>
+                                </div>
+                                <div>
+                                    <article id='testimonial' className='flex flex-row w-1/2 p-4 gap-8 bg-sepia italic' >
+                                        <h3>Its just genius. I can now get anything I want.</h3>
+                                    </article>
+                                </div>
+                                <div>
+                                    <article id='testimonial' className='flex flex-row w-1/2 p-4 gap-8 bg-sepia italic' >
+                                        <h3>Trusting your vendor to get you the right quality of goods has never been easier. Thank you!</h3>
+                                    </article>
+                                </div> 
+                            <div id='sponsors' className='flex flex-col-reverse w-1/2 p-4 rounded-md bg-fawn text center italic' >
+                                Jibberish!!
+                            </div>    
+                        </section>
 
 
 
